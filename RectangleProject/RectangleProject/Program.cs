@@ -16,11 +16,11 @@ namespace RectangleProject
             }
             else if(r2.Area > r1.Area)
             {
-
+                Console.WriteLine($"A második téglalap területe a nagyobb! Területe: {r2.Area}");
             }
             else
             {
-
+                Console.WriteLine($"A két téglalap területe egyenlő! Területük: {r1.Area}");
             }
         }
     }
