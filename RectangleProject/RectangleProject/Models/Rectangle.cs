@@ -11,16 +11,34 @@ namespace RectangleProject.Models
         public double SideA
         {
             get { return this.sideA; }
-            set { this.sideA = value; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new RectangleSideIsNullOrZero();
+                }
+                this.sideA = value;
+            }
         }
         public double SideB
         {
             get { return this.sideB; }
-            set { this.sideB = value; }
+            set
+            {
+                if(value <= 0)
+                {
+                    throw new RectangleSideIsNullOrZero();
+                }
+                this.sideB = value;
+            }
         }
 
         public Rectangle(double sideA, double sideB)
         {
+            if(sideA <= 0 || sideB <= 0)
+            {
+                throw new RectangleSideIsNullOrZero();
+            }
             this.sideA = sideA;
             this.sideB = sideB;
         }
