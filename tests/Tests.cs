@@ -8,15 +8,14 @@ using System.IO;
 
 using RectangleProject.Models;
 
-namespace RectangleProject.Tests 
+namespace RectangleProject.Tests
 {
-
-
-
     [TestClass()]
     public class Tests
     {
-
+        [TestMethod()]
+        public void Test()
+        {
             Rectangle r = new Rectangle(4.25,7.34);
             double expectedSideA = 4.25;
             double actualSideA = r.SideA;
