@@ -18,8 +18,8 @@ namespace RectangleProject.Tests
         public void TestRectangleException()
         {
             Rectangle r = new Rectangle(4.25, 7.34);
-            Assert.ThrowsException<RectangleSideIsNullOrZero>(() => r.SideA = -2);
-            Assert.ThrowsException<RectangleSideIsNullOrZero>(() => r.SideB = -2);
+            Assert.ThrowsException<RectangleSideIsNullOrZero>(() => r.SideA=-2 );
+            Assert.ThrowsException<RectangleSideIsNullOrZero>(() => r.SideB =-2);
             Assert.ThrowsException<RectangleSideIsNullOrZero>(() => r.SideA = 0);
             Assert.ThrowsException<RectangleSideIsNullOrZero>(() => r.SideB = 0);
 
@@ -33,7 +33,7 @@ namespace RectangleProject.Tests
             }
             catch (Exception e)
             {
-                Assert.Fail("A négyzet konstruktora nem a megfelelő kivételt dobja!\n" + e.Message);
+                Assert.Fail("A négyzet konstruktora nem a megfelelő kivételt dobja!\n"+e.Message);
             }
             Assert.Fail("A négyzet konstruktora negatív oldal esetén nem dob kivételt!");
 
