@@ -37,7 +37,7 @@ namespace RectangleProject.Models
 
         public override string ToString()
         {
-            return $"Téglalap a oldala: {this.sideA}, b oldala: {this.sideB}, területe: {Math.Round(this.Area, 2)}, kerülete: {Math.Round(this.Area, 2)}";
+            return $"Téglalap a oldala: {this.sideA}, b oldala: {this.sideB}, területe: {Math.Round(this.Area, 2)} kerülete: {Math.Round(this.Perimeter, 2)}";
         }
     }
 }

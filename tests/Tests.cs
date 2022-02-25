@@ -8,8 +8,6 @@ using System.IO;
 
 using RectangleProject.Models;
 
-namespace RectangleProject.Tests 
-{
 namespace RectangleProject.Tests
 {
     [TestClass()]
